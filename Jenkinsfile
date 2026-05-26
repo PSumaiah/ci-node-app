@@ -28,7 +28,7 @@ pipeline{
         }
         stage('run docker containers'){
             steps{
-                bat 'docker run -d -p 3000:3000 --name node container ci-node-app'
+                bat 'docker run -d -p 3000:3000 --name node-container ci-node-app'
             }
         }
     }
